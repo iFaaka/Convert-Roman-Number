@@ -173,10 +173,26 @@ export const NumeroLatinARomano = ({result}) => {
           case 4:
             arr[3] = "MMMM"
           break
+
+          case 5:
+            arr[3] = "V"
+          break
   
-  
+          case 6:
+            arr[3] = "VM"
+          break
       
-      
+          case 7:
+            arr[3] = "VMM"
+          break
+
+          case 8:
+            arr[3] = "VMMM"
+          break
+
+          case 9:
+            arr[3] = "IX"
+          break
         }
       
       }
@@ -206,8 +222,9 @@ export const NumeroLatinARomano = ({result}) => {
                 convertirDecenas(arr)
                 convertirCentenas(arr)
                 convertirMiles(arr)
-  
             break
+
+
   
   
         }
@@ -216,10 +233,15 @@ export const NumeroLatinARomano = ({result}) => {
       }
   
   
+      if (newArray.length > 4) {
+        return "Todavia no soportamos ese valor :("
+      }
+      else {
+        conversorMegaFantiastico(newArray)
+        newArray.reverse()
+      }
   
-  
-      conversorMegaFantiastico(newArray)
-      newArray.reverse()
+
   
     
     

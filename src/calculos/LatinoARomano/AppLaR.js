@@ -19,17 +19,16 @@ export const AppLaR = () => {
 
     const handleSubmit = (e) => {
             e.preventDefault();
+
+        if (inputLatino.trim().length > 0) {
+
             setResult(inputLatino)
             setInputLatino([''])
 
-          
+        }
+    
     }
-    
-    
-    
-    
-    
-    
+ 
     
     
     return (
