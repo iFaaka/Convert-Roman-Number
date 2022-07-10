@@ -1,15 +1,20 @@
-body {
-
-    background: rgb(29,47,138);
-    background: -moz-radial-gradient(circle, rgba(29,47,138,1) 27%, rgba(252,70,107,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(29,47,138,1) 27%, rgba(252,70,107,1) 100%);
-    background: radial-gradient(circle, rgba(29,47,138,1) 27%, rgba(252,70,107,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2f8a",endColorstr="#fc466b",GradientType=1);
-    
-    max-height: 100vh;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: #2C3639;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+h1{
+    margin-bottom: 6vh;
+    color: #DCD7C9;
+}
 
 #principalCard {
 
@@ -17,20 +22,72 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: white 1px solid;
-    padding: 9rem;
+    height: 100vh;
+    width: 70vw;    
+    background-color: #3F4E4F;
+    padding-left: 6vw;
+    padding-right: 6vw;
 
 }
 
-input {
-    width: 70%;
+#principalCard span {
+    color: #DCD7C9;
+    padding-left: 3vh;
+}
+#principalCard code {
+    color: #DCD7C9;
+    padding-left: 3vh;
 }
 
-p {
-    background-color: green;;
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+form {
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#operation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#inputNumber {
+    overflow: hidden;
+    width: 9vw;
+    font-size: 5vh;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #A27B5C;
+    color: #DCD7C9;
+    font-weight: 700;
+    width: 9vw;
+    height: 10vh;
+    border-radius: 20px;
+    margin-left: 8vw;
 }
 
 
-code {
-    background-color: grey;
+#gitLogo {
+    margin-top: 20vh;
+}
+
+#result {
+    color: #DCD7C9;
+    font-weight: 700;
+    font-size: 8vh;
+    margin-top: 6vh;
 }

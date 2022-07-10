@@ -32,16 +32,17 @@ export const AppLaR = () => {
     
     
     return (
-        <div>
+        <div id='operation'>
             <form onSubmit={handleSubmit}>
                     <input 
                     type="number" 
                     value = {inputLatino}
                     onChange={handleInputChange}
+                    id='inputNumber'
                     />
 
                     <button onClick={handleSubmit}>Convertir!</button>
-                </form>
+            </form>
                         
                      <NumeroLatinARomano result={result}/>
 
